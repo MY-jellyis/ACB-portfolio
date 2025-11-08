@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angelo C. Barbacena | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="logo">ACB.</div>
+
+  <!-- Desktop Navigation -->
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hamburger Menu (Visible only on small screens) -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdown-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menuToggle.classList.toggle("open");
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!menuToggle.contains(e.target)) {
+      menuToggle.classList.remove("open");
+    }
+  });
+</script>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="fireflies">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="hero-content">
+    <!-- Left Text -->
+    <div class="intro">
+      <h4 class="welcome-text">WELCOME TO MY PORTFOLIO</h4>
+      <h1>Hello, I'm <span class="highlight">Angelo C. Barbacena</span></h1>
+      <h2 class="sub-title">BSIT Student</h2>
+      <p>
+        A passionate creator who blends art and technology — designing, illustrating,
+        and building digital experiences that inspire and connect people.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">Let's Collaborate</a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="profile">
+      <img src="img/itsme.png" alt="Profile Picture" class="profile-img" />
+    </div>
+  </div>
+</section>
+
+ <!-- About Section -->
+<section id="about" class="about-section">
+  <div class="fireflies">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="about-container">
+    <div class="about-image">
+      <img src="img/builders.jpg" alt="Angelo C. Barbacena" />
+    </div>
+
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m <strong>Angelo C. Barbacena</strong>, a 4th year 
+        <strong>Bachelor of Science in Information Technology</strong> student
+        at <strong>Mindoro State University</strong>. I’m a passionate designer and Literary Editor for
+        <strong>Builders Pandayan</strong>, where I bring creativity to life through digital art and storytelling.
+      </p>
+      <br>
+      <p>
+        My focus lies in <strong>graphic design, illustration, and web development</strong>. 
+        I enjoy transforming ideas into interactive visuals — balancing creativity 
+        with functionality to craft meaningful user experiences.
+      </p>
+      <br>
+      <p>
+        Beyond design, I value <strong>teamwork, leadership, and continuous learning</strong>. 
+        I believe that growth comes from collaboration, passion, and curiosity for new technologies.
+      </p>
+
+      <a href="#projects" class="btn about-btn">View My Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="content">
+  <div class="fireflies">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <h2 class="center-title">My Skills</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="fa-brands fa-html5"></i>
+      <h3>HTML & CSS</h3>
+      <p>Building responsive layouts, semantic markup, and interactive styling with CSS animations.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-js"></i>
+      <h3>JavaScript (Basic)</h3>
+      <p>Creating dynamic web features like forms, modals, and small app functionalities.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-mobile-screen"></i>
+      <h3>Responsive Design</h3>
+      <p>Ensuring websites look great across all devices using Flexbox, Grid, and media queries.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-pen-nib"></i>
+      <h3>Graphic & Web Design</h3>
+      <p>Designing professional layouts and UI mockups using Canva principles.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-palette"></i>
+      <h3>UI/UX Fundamentals</h3>
+      <p>Crafting user-centered designs focused on accessibility, usability, and visual balance.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-brush"></i>
+      <h3>Digital Art & Illustration</h3>
+      <p>Exploring styles such as watercolor, scribble, digital comic, portrait art, and concept art.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-people-group"></i>
+      <h3>Team Collaboration</h3>
+      <p>Working effectively in teams with communication tools like Slack, Trello, and GitHub.</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-comments"></i>
+      <h3>Communication Skills</h3>
+      <p>Conveying ideas clearly, presenting designs effectively, and maintaining strong client and team relationships.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="content alt-bg">
+  <div class="fireflies">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <h2 class="center-title">Featured Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>MinSU 3D Campus Tour Navigation</h3>
+      <p>Developed a 3D structure and virtual navigation system of Mindoro State University Calapan Campus for an interactive tour experience.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>AR Navigation for CRZP</h3>
+      <p>Created an interactive AR navigation system for the Calapan Recreational and Zoological Park to guide visitors through real-time markers and overlays.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Builders Pandayan Publications</h3>
+      <p>Produced magazine artworks, literary folio piece, and themed comics for campus events using both traditional and digital art methods.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>UI/UX Mockup Design</h3>
+      <p>Created mobile and web UI/UX mockups for academic projects, focusing on clean, user-centered design and intuitive layouts.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Gallery Section -->
+<section id="gallery" class="content">
+  <div class="fireflies">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <h2 class="center-title">Creative Gallery</h2>
+  <p>A curated collection of my artworks, digital illustrations, and visual design projects.</p>
+
+<!-- Artworks & Illustrations Section -->
+<div class="gallery-section">
+  <div class="masonry-gallery">
+    
+    <div class="gallery-item">
+      <img src="img/overthinkkills.png" alt="Overthink Kills">
+      <div class="overlay">
+        <h4>"Overthink Kills"</h4>
+        <p>A conceptual artwork reflecting the weight of overanalyzing and mental exhaustion.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/Selflove.png" alt="Self Love">
+      <div class="overlay">
+        <h4>"Self Love"</h4>
+        <p>An inspiring digital piece about growth, healing, and embracing one’s inner self.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/Blindbycrown.jpg" alt="Blind by Crown">
+      <div class="overlay">
+        <h4>"Blind by Crown"</h4>
+        <p>A symbolic artwork about pride, blindness, and the cost of ambition.</p>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="img/tofail.png" alt="To Fail">
+      <div class="overlay">
+        <h4>"To Fail"</h4>
+        <p>A minimalist piece capturing the quiet beauty and lesson found in failure.</p>
+      </div>
+    </div>
+
+<div class="gallery-item">
+  <img src="img/anxiety.jpg" alt="Anxiety">
+  <div class="overlay">
+    <h4>"Anxiety"</h4>
+    <p>A visual portrayal of inner tension and emotional turbulence through expressive art.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="img/moonlightgoddess.png" alt="Moonlight Goddess">
+  <div class="overlay">
+    <h4>"Moonlight Goddess"</h4>
+    <p>A serene depiction of divine beauty illuminated under the soft glow of the moon.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="img/octoberlove.png" alt="October Love">
+  <div class="overlay">
+    <h4>"October Love"</h4>
+    <p>A warm and nostalgic piece inspired by fleeting moments of autumn affection.</p>
+  </div>
+</div>
+
+<div class="gallery-item">
+  <img src="img/rainbowwarrior.png" alt="Rainbow Warrior">
+  <div class="overlay">
+    <h4>"Rainbow Warrior"</h4>
+    <p>A bold and vibrant artwork celebrating resilience, identity, and the power of self-expression.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="content alt-bg">
+  <div class="fireflies">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <h2 class="center-title">Get In Touch</h2>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <i class="fa-solid fa-envelope"></i>
+      <h3>Email</h3>
+      <p><a href="mailto:jelocolocado@gmail.com">jelocolocado@gmail.com</a></p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fa-solid fa-phone"></i>
+      <h3>Phone</h3>
+      <p><a href="tel:+639477881264">+63 947 788 1264</a></p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fa-brands fa-instagram"></i>
+      <h3>Instagram</h3>
+      <p><a href="https://instagram.com/kua_jello" target="_blank">@kua_jello</a></p>
+    </div>
+
+    <div class="contact-card">
+      <i class="fa-brands fa-tiktok"></i>
+      <h3>TikTok</h3>
+      <p><a href="https://tiktok.com/@kua_jello" target="_blank">@kua_jello</a></p>
+    </div>
+  </div>
+
+  <a href="#home" class="btn">Back to Top</a>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Angelo C. Barbacena | Designed with Passion</p>
+  </footer>
+</body>
+</html>
